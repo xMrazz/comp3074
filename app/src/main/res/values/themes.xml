@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Final_project" parent="Theme.AppCompat.Light.DarkActionBar">'
+
+    </style>
+
+    <!-- Style for rounded buttons -->
+    <style name="RoundedButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+</resources>

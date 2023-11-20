@@ -1,0 +1,78 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424141"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="248dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="32dp"
+        android:text="FoodFinder"
+        android:textSize="48sp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textViewCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@id/buttonFastFood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonFastFood"
+        style="@style/RoundedButton"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:text="Fast Food"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/buttonFineDining"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintBottom_toTopOf="@id/buttonBars"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/buttonFineDining"
+        style="@style/RoundedButton"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:text="Fine Dining"
+        app:layout_constraintLeft_toRightOf="@id/buttonFastFood"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/buttonFastFood"
+        app:layout_constraintBottom_toBottomOf="@id/buttonFastFood" />
+
+    <Button
+        android:id="@+id/buttonBars"
+        style="@style/RoundedButton"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:text="Bars"
+        app:layout_constraintLeft_toLeftOf="@id/buttonFastFood"
+        app:layout_constraintRight_toRightOf="@id/buttonFastFood"
+        app:layout_constraintTop_toBottomOf="@id/buttonFastFood"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWorldCuisine"
+        style="@style/RoundedButton"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:text="World Cuisine"
+        app:layout_constraintLeft_toLeftOf="@id/buttonFineDining"
+        app:layout_constraintRight_toRightOf="@id/buttonFineDining"
+        app:layout_constraintTop_toTopOf="@id/buttonBars"
+        app:layout_constraintBottom_toBottomOf="@id/buttonBars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
