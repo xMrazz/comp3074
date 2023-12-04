@@ -3,54 +3,25 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp"
-    android:layout_marginBottom="8dp">
+    android:background="@drawable/restaurant_background"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
 
-<ImageView
-    android:id="@+id/imageViewRestaurant"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:textColor="#FFFFFF"
-    android:scaleType="centerCrop" />
+    <ImageView
+        android:id="@+id/imageViewRestaurant"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/the_grand"
+        android:scaleType="centerCrop"
+        android:contentDescription="Fine Dining Image" />
 
-<TextView
-    android:id="@+id/textViewName"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="18sp"
-    android:textColor="#FFFFFF"
-    android:textStyle="bold" />
-
-<TextView
-    android:id="@+id/textViewCuisine"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="16sp"
-    android:textColor="#FFFFFF"
-    android:paddingTop="4dp" />
-
-<TextView
-    android:id="@+id/textViewRating"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="16sp"
-    android:textColor="#FFFFFF"
-    android:paddingTop="4dp" />
-
-<TextView
-    android:id="@+id/textViewReviewCount"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="14sp"
-    android:textColor="#FFFFFF"
-    android:paddingTop="2dp" />
-
-<TextView
-    android:id="@+id/textViewOpenNow"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="14sp"
-    android:textColor="#FFFFFF"
-    android:paddingTop="2dp"
-    android:paddingBottom="8dp" />
-
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
 </LinearLayout>
