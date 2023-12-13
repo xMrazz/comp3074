@@ -63,7 +63,7 @@ public class FineDiningActivity extends AppCompatActivity {
                     detailIntent.putExtra("image", (Integer) data[5]);
                     detailIntent.putExtra("rating", (String) data[2]);
                     detailIntent.putExtra("reviews", (String) data[3]);
-                    detailIntent.putExtra("address", "123 Main St. Toronto, ON");
+                    detailIntent.putExtra("address", "290 Bremner Blvd. Toronto, ON");
                     startActivity(detailIntent);
                 }
             });

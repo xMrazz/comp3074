@@ -63,7 +63,7 @@ public class FastFoodActivity extends AppCompatActivity {
                     detailIntent.putExtra("image", (Integer) data[5]);
                     detailIntent.putExtra("rating", (String) data[2]);
                     detailIntent.putExtra("reviews", (String) data[3]);
-                    detailIntent.putExtra("address", "123 Redwood Rd. Toronto, ON");
+                    detailIntent.putExtra("address", "317 Dundas St W. Toronto, ON");
                     startActivity(detailIntent);
                 }
             });

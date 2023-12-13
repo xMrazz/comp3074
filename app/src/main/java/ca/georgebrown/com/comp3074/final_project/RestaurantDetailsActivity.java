@@ -17,33 +17,27 @@ public class RestaurantDetailsActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Restaurant Details");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        // This part gets the data from the previous activity
         String name = getIntent().getStringExtra("name");
         int imageResource = getIntent().getIntExtra("image", 0);
         String rating = getIntent().getStringExtra("rating");
         String address = getIntent().getStringExtra("address");
 
-        // Set data to views in order to display it when clicked
         ((TextView) findViewById(R.id.textViewRestaurantName)).setText(name);
         ((ImageView) findViewById(R.id.imageViewRestaurant)).setImageResource(imageResource);
         ((TextView) findViewById(R.id.textViewRating)).setText("Rating: " + rating + "/5");
         ((TextView) findViewById(R.id.textViewAddress)).setText(address);
-        ((TextView) findViewById(R.id.textViewAddress)).setText(address);
 
-        // Get Directions button
+        // Using a web browser here to open the address
         findViewById(R.id.buttonGetDirections).setOnClickListener(view -> {
-            Uri gmmIntentUri = Uri.parse("google.navigation:q=" + Uri.encode(address));
+            Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/dir/?api=1&destination=" + Uri.encode(address));
             Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-            mapIntent.setPackage("com.google.android.apps.maps");
-            if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                startActivity(mapIntent);
-            }
+            startActivity(mapIntent);
         });
     }
 
     @Override
     public boolean onSupportNavigateUp() {
-        finish();
+        onBackPressed();
         return true;
     }
 }

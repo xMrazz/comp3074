@@ -63,7 +63,7 @@ public class BarsActivity extends AppCompatActivity {
                     detailIntent.putExtra("image", (Integer) data[5]);
                     detailIntent.putExtra("rating", (String) data[2]);
                     detailIntent.putExtra("reviews", (String) data[3]);
-                    detailIntent.putExtra("address", "86 Pinecrest Ave. Toronto, ON");
+                    detailIntent.putExtra("address", "1 Blue Jays Way, Toronto, ON");
                     startActivity(detailIntent);
                 }
             });
